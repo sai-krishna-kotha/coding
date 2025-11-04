@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+        "label": "Run Python with I/O",
+        "type": "shell",
+        "command": "cmd.exe",
+        "args": [
+            "/c",
+            "python \"${file}\" < input.txt > output.txt"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+        "presentation": {
+            "reveal": "silent",
+            "panel": "shared",
+            "clear": false
+        },
+        "problemMatcher": []
+    }
+]
+}   
