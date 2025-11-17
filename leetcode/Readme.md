@@ -2,7 +2,7 @@
 
 ## 1. Prefix Sum
 ### Easy
-- [ ] 303. Range Sum Query - Immutable
+- [x] 303. Range Sum Query - Immutable
 - [ ] 724. Find Pivot Index
 - [ ] 1480. Running Sum of 1d Array
 - [ ] 1732. Find the Highest Altitude
