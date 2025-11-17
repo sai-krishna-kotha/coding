@@ -1,7 +1,7 @@
 # DSA Preparation Tracker
 
-**Goal:** Master the 21 underlying patterns behind top-tier technical interview questions.
-**Total Problems:** 440
+**Goal:** Master the 21 underlying patterns behind top-tier technical interview questions.<br>
+**Total Problems:** 440<br>
 **Focus:** Patterns sorted by difficulty (Fundamental → Advanced).
 
 ---
