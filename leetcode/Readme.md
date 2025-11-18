@@ -7,7 +7,7 @@
 - [x] [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array)
 - [x] [1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude)
 - [x] [1991. Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array)
-- [ ] [2574. Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences)
+- [x] [2574. Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences)
 - [ ] [1413. Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)
 
 ### Medium
