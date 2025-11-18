@@ -4,7 +4,7 @@
 ### Easy
 - [x] [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable)
 - [x] [**724. Find Pivot Index**](https://leetcode.com/problems/find-pivot-index)
-- [ ] [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array)
+- [x] [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array)
 - [ ] [1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude)
 - [ ] [1991. Find the Middle Index in Array](https://leetcode.com/problems/find-the-middle-index-in-array)
 - [ ] [2574. Left and Right Sum Differences](https://leetcode.com/problems/left-and-right-sum-differences)
