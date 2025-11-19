@@ -12,7 +12,7 @@
 
 ### Medium
 - [x] [525. Contiguous Array](https://leetcode.com/problems/contiguous-array)
-- [ ] [***560. Subarray Sum Equals K***](https://leetcode.com/problems/subarray-sum-equals-k)
+- [x] [***560. Subarray Sum Equals K***](https://leetcode.com/problems/subarray-sum-equals-k)
 - [ ] [***238. Product of Array Except Self***](https://leetcode.com/problems/product-of-array-except-self)
 - [ ] [304. Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)
 - [ ] [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k)
