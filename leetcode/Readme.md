@@ -11,7 +11,7 @@
 - [x] [1413. Minimum Value to Get Positive Step by Step Sum](https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum)
 
 ### Medium
-- [ ] [525. Contiguous Array](https://leetcode.com/problems/contiguous-array)
+- [x] [525. Contiguous Array](https://leetcode.com/problems/contiguous-array)
 - [ ] [***560. Subarray Sum Equals K***](https://leetcode.com/problems/subarray-sum-equals-k)
 - [ ] [***238. Product of Array Except Self***](https://leetcode.com/problems/product-of-array-except-self)
 - [ ] [304. Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)
