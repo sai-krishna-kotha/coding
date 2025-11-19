@@ -3,9 +3,11 @@ class NumArray:
 
     def __init__(self, nums: List[int]):
         self.arr = nums
+        for i in range(1, len(nums)):
+            self.arr[i] = self.arr[i-1] + self.arr[i]
 
     def sumRange(self, left: int, right: int) -> int:
-        return sum(self.arr[left: right+1])
+        return self.arr[right] if left == 0 else self.arr[right] - self.arr[left-1]
 
 
 # Your NumArray object will be instantiated and called as such:
