@@ -16,7 +16,7 @@
 - [x] [***238. Product of Array Except Self***](https://leetcode.com/problems/product-of-array-except-self)
 - [ ] [304. Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable)
 - [ ] [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k)
-- [ ] [***523. Continuous Subarray Sum***](https://leetcode.com/problems/continuous-subarray-sum)
+- [x] [***523. Continuous Subarray Sum***](https://leetcode.com/problems/continuous-subarray-sum)
 - [ ] [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)
 - [ ] [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
 - [ ] [1314. Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum)
