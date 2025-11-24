@@ -18,7 +18,7 @@
 - [ ] [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k)
 - [x] [***523. Continuous Subarray Sum***](https://leetcode.com/problems/continuous-subarray-sum)
 - [ ] [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)
-- [ ] [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
+- [x] [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
 - [ ] [1314. Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum)
 - [ ] [1371. Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts)
 - [ ] [1124. Longest Well-Performing Interval](https://leetcode.com/problems/longest-well-performing-interval)
