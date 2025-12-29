@@ -30,4 +30,40 @@ def merge(arr: list, low: int, mid: int, high: int):
     for i in range(low, high+1):
         arr[i] = merged[i-low]
 
+def quick_sort(arr: list):
+    n = len(arr)
+    if n <= 1:
+        return arr
+    pivot = arr.pop()
+    lesser_arr = []
+    greater_arr = []
+    for ele in arr:
+        if ele < pivot:
+            lesser_arr.append(ele)
+        else:
+            greater_arr.append(ele)
+    return quick_sort(lesser_arr) + [pivot] + quick_sort(greater_arr)
+
+def partition(arr, start, end):
+    n = len(arr)
+    pivot_idx = start
+    pivot = arr[start]
+    while start < end:
+        while arr[start] <= pivot:
+            start += 1
+        while arr[end] > pivot:
+            end -= 1
+        if start < end:
+            arr[end], arr[start] = arr[start], arr[end]
+    arr[pivot_idx], arr[end] = arr[end], arr[pivot_idx]
+    return end
+def quick_sort1(arr, start, end):
+    if start < end:
+        p1 = partition(arr, start, end)
+        quick_sort1(arr, start, p1-1)
+        quick_sort1(arr, p1+1, end)
+    return arr
+
 print(merge_sort([4,1,3,5,2],0, 4))
+print(quick_sort([4,1,3, 5, 2]))
+print(quick_sort1([4,1,3,5,2], 0, 4))
