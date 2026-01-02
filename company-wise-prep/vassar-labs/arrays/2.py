@@ -8,8 +8,8 @@ def sol(arr: list):
             continue
         j = i + 1
         k = n - 1
-        triple = arr[i] + arr[j] + arr[k]
         while j < k:
+            triple = arr[i] + arr[j] + arr[k]
             if triple == 0:
                 ans.append([arr[i], arr[j], arr[k]])
                 while j < k and arr[j] == arr[j+1]:
