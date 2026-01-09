@@ -1,6 +1,10 @@
-def isBST(root, left = float("-inf"), right = float("inf")):
-    if not root:
-        return True
-    if not (left < root.data < right):
-        return False
-    return isBST(root.left, left, root.data) and isBST(root.right, root.data, right)
+def f(n, dp):
+    if n <= 1:
+        return n
+    if dp[n] != -1:
+        return dp[n]
+    dp[n] = f(n-1,dp) + f(n-2, dp)
+    return dp[n]
+n = 6
+dp = [-1]*(n+1)
+print(f(n, dp))

@@ -31,6 +31,13 @@ root.right = TreeNode(20)
 root.right.left = TreeNode(15)
 root.right.right = TreeNode(25)
 
+bt =TreeNode(1)
+bt.left =TreeNode(2)
+bt.right =TreeNode(3)
+bt.left.left =TreeNode(4)
+bt.left.right =TreeNode(5)
+bt.right.left =TreeNode(6)
+bt.right.right =TreeNode(7)
 
 def vertical_order(root):
     if not root:
@@ -46,4 +53,5 @@ def vertical_order(root):
             q.append((node.right, temp + 1))
     for temp in sorted(mp):
         print(mp[temp], end=' ')
-vertical_order(root)
+# vertical_order(root)
+vertical_order(bt)
