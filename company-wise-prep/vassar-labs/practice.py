@@ -6,97 +6,98 @@ class Node:
         self.left = None
         self.right = None
         
-    def inorder(self, root):
-        if not root:
-            return None
-        self.inorder(root.left)
-        print(root.data)
-        self.inorder(root.right)
+def inorder(root):
+    if not root:
+        return None
+    inorder(root.left)
+    print(root.data)
+    inorder(root.right)
         
-    def inorder_iterative(self, root):
-        stack = []
-        ans = []
-        curr = root
-        while curr or stack:
-            while curr:
-                stack.append(curr)
-                curr = curr.left
-            curr = stack.pop()
-            ans.append(curr.data)
-            curr = curr.right
-        # return ans
-        print(ans)
+def inorder_iterative(root):
+    stack = []
+    ans = []
+    curr = root
+    while curr or stack:
+        while curr:
+            stack.append(curr)
+            curr = curr.left
+        curr = stack.pop()
+        ans.append(curr.data)
+        curr = curr.right
+    # return ans
+    print(ans)
         
-    def preorder(self, root):
-        if not root:
-            return None
-        print(root.data)
-        self.preorder(root.left)
-        self.preorder(root.right) 
+def preorder(root):
+    if not root:
+        return None
+    print(root.data)
+    preorder(root.left)
+    preorder(root.right) 
         
-    def preorder_iterative(self, root):
-        stack = [root] if root else []
-        ans = []
-        while stack:
-            node = stack.pop()
-            if node:
-                ans.append(node.data)
-                if node.right:
-                    ans.append(node.right)
-                if node.left:
-                    ans.append(node.left)
-        print(ans)
-        # return ans
-
-    def postorder(self, root):
-        if not root:
-            return None
-        self.postorder(root.left)
-        self.postorder(root.right)
-        print(root.data)
-    def postorder_iterative(self, root):
-        stack1 = [root] if root else []
-        stack2 = []
-        ans = []
-        while stack1:
-            node = stack1.pop()
-            if node:
-                stack2.append(node)
-                if node.left:
-                    stack1.append(node.left)
-                if node.right:
-                    stack1.append(node.right)
-        while stack2:
-            ans.append(stack2.pop().data)
-        print(ans)
-        return ans
-    def level_order_traversal(self, root):
-        queue = deque([root])
-        ans = []
-        while queue:
-            node = queue.popleft()
+def preorder_iterative(root):
+    stack = [root] if root else []
+    ans = []
+    while stack:
+        node = stack.pop()
+        if node:
             ans.append(node.data)
-            if node.left:
-                queue.append(node.left)
             if node.right:
-                queue.append(node.right)
-        print(ans)
-        return ans
-    def vertical_order_traversal(self, root):
-        queue = deque([(root, 0)])
-        mapp = defaultdict(list)
-        while queue:
-            node, hd = queue.popleft()
-            mapp[hd].append(node.data)
+                stack.append(node.right)
             if node.left:
-                queue.append((node.left, hd - 1))
+                stack.append(node.left)
+    print(ans)
+    # return ans
+
+def postorder(root):
+    if not root:
+        return None
+    postorder(root.left)
+    postorder(root.right)
+    print(root.data)
+def postorder_iterative(root):
+    stack1 = [root] if root else []
+    stack2 = []
+    ans = []
+    while stack1:
+        node = stack1.pop()
+        if node:
+            stack2.append(node)
+            if node.left:
+                stack1.append(node.left)
             if node.right:
-                queue.append((node.right, hd + 1))
-        ans = []
-        for hd in sorted(mapp):
-            ans.append(mapp[hd])
-        print(ans)
-        return ans
+                stack1.append(node.right)
+    while stack2:
+        ans.append(stack2.pop().data)
+    print(ans)
+    return ans
+def level_order_traversal(root):
+    queue = deque([root])
+    ans = []
+    while queue:
+        node = queue.popleft()
+        ans.append(node.data)
+        if node.left:
+            queue.append(node.left)
+        if node.right:
+            queue.append(node.right)
+    print(ans)
+    return ans
+def vertical_order_traversal(root):
+    queue = deque([(root, 0)])
+    mapp = defaultdict(list)
+    while queue:
+        node, hd = queue.popleft()
+        mapp[hd].append(node.data)
+        if node.left:
+            queue.append((node.left, hd - 1))
+        if node.right:
+            queue.append((node.right, hd + 1))
+    ans = []
+    for hd in sorted(mapp):
+        ans.append(mapp[hd])
+    print(ans)
+    return ans
+
 def height(root):
     if not root:
         return 0
@@ -205,14 +206,14 @@ bt2.left.right = Node(5)
 bt2.right.left = Node(6)
 bt2.right.right = Node(7)
 
-# bt.inorder(bt)
-# bt.inorder_iterative(bt)
-# bt.preorder(bt)
-# bt.preorder(bt)
-# bt.postorder(bt)
-# bt.postorder_iterative(bt)
-# bt.level_order_traversal(bt)
-# bt.vertical_order_traversal(bt)
+# inorder(bt)
+# inorder_iterative(bt)
+# preorder(bt)
+# preorder(bt)
+# postorder(bt)
+# postorder_iterative(bt)
+# level_order_traversal(bt)
+# vertical_order_traversal(bt)
 # ans = height(bt)
 # print(ans)
 # print(diameter(bt))
