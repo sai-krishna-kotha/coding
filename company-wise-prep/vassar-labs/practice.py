@@ -71,7 +71,7 @@ def postorder_iterative(root):
     print(ans)
     return ans
 def level_order_traversal(root):
-    queue = deque([root])
+    queue = deque([root]) if root else []
     ans = []
     while queue:
         node = queue.popleft()
@@ -83,7 +83,7 @@ def level_order_traversal(root):
     print(ans)
     return ans
 def vertical_order_traversal(root):
-    queue = deque([(root, 0)])
+    queue = deque([(root, 0)]) if root else []
     mapp = defaultdict(list)
     while queue:
         node, hd = queue.popleft()
@@ -126,7 +126,7 @@ def isIdentical(root1, root2):
     return isIdentical(root1.left, root2.left) and isIdentical(root1.right, root2.right)
 
 def top_view(root):
-    queue = deque([(root, 0)])
+    queue = deque([(root, 0)]) if root else []
     mapp = {}
     while queue:
         node, hd = queue.popleft()
@@ -143,7 +143,7 @@ def top_view(root):
     return ans
 
 def bottoom_view(root):
-    queue = deque([(root, 0)])
+    queue = deque([(root, 0)]) if root else []
     mapp = {}
     while queue:
         node, hd = queue.popleft()
@@ -159,7 +159,7 @@ def bottoom_view(root):
     return ans
 
 def left_view(root):
-    queue = deque([root])
+    queue = deque([root]) if root else []
     ans = []
     while queue:
         n = len(queue)
@@ -175,7 +175,7 @@ def left_view(root):
     return ans
 
 def right_view(root):
-    queue = deque([root])
+    queue = deque([root]) if root else []
     ans = []
     while queue:
         n = len(queue)
