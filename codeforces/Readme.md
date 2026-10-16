@@ -1,2 +1,5 @@
 # My Coding Solutions
 ```I solve problems daily on Codeforces using the Striver CP Sheet. I find the narrative-style problems there particularly engaging and enjoyable compared to standard platforms.```
+
+# Learnings
+1. To convert from string to chars list use ``` list(input())```
